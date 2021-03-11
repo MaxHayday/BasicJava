@@ -4,9 +4,7 @@ import static com.maxhayday.hw01_enums.HttpCodesEnum.CLIENT_ERROR;
 
 public class ClientErrorHandler implements Handler {
     @Override
-    public HttpCodesEnum getHttpCode(int httpCode) {
-        if (httpCode >= 400 && httpCode <= 499)
+    public HttpCodesEnum getHttpCode() {
             return CLIENT_ERROR;
-        else return null;
     }
 }

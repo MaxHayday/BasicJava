@@ -6,10 +6,7 @@ import static com.maxhayday.hw01_enums.HttpCodesEnum.INFORMATIONAL;
 public class InformationHandler implements Handler {
 
     @Override
-    public HttpCodesEnum getHttpCode(int code) {
-        if (code >= 100 && code <= 199)
+    public HttpCodesEnum getHttpCode() {
             return INFORMATIONAL;
-        else
-            return null;
     }
 }

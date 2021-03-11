@@ -17,12 +17,9 @@ public enum HttpCodesEnum {
     private final Handler handler;
 
     public static HttpCodesEnum findByHttpCode(int httpCode) {
-        HttpCodesEnum[] enumValues = values();
-        for (HttpCodesEnum value : enumValues) {
-            HttpCodesEnum handler1 = value.getHandler().getHttpCode(httpCode);
-            if (handler1 != null) {
-                System.out.println(handler1);
-                return handler1;
+        for (HttpCodesEnum value : values()) {
+            if (httpCode >= value.min && httpCode<= value.max) {
+                return value;
             }
         }
         throw new IllegalStateException(httpCode + " not supported yet");
