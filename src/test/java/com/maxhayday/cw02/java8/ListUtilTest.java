@@ -13,7 +13,7 @@ public class ListUtilTest {
     @Test
     public void countDuplicate() {
         List<String> stringList = asList("java", "Java", "JaVa", "Scala");
-        int amount = ListUtil.countDuplicate("java", stringList);
+        int amount = ListUtil.countDuplicate("java", stringList, (s, t1) -> s.equalsIgnoreCase(t1));
         Assert.assertEquals(3, amount);
     }
 }
