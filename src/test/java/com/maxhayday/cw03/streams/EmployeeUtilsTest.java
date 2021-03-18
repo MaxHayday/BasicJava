@@ -1,15 +1,11 @@
 package com.maxhayday.cw03.streams;
 
 import com.maxhayday.cw03.Employee;
-import lombok.Builder;
 import org.junit.Test;
-import org.junit.rules.Timeout;
 
 import java.util.List;
 import java.util.Map;
 
-import static java.util.Arrays.asList;
-import static org.junit.Assert.*;
 
 public class EmployeeUtilsTest {
 
