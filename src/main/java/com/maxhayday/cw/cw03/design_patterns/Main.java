@@ -8,7 +8,7 @@ public class Main {
         DistributionService service = new DistributionService();
         while (true){
             Thread.sleep(500);
-            service.sandMail();
+            service.sendMail();
         }
     }
 }

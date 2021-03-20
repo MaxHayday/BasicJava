@@ -1,5 +1,6 @@
 package com.maxhayday.cw.cw03.design_patterns_by_evgeniy;
 
+@TemplateCode(2)
 public class EmailCallbackMailGenerator implements MailGenerator{
     @Override
     public String generateMail() {
