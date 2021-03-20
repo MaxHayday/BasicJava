@@ -1,6 +1,6 @@
 package com.maxhayday.cw.cw03;
 
-import com.maxhayday.hw.hw02.GroupEmployeesBySalary;
+import com.maxhayday.hw.hw03.GroupEmployeesBySalary;
 
 import java.util.ArrayList;
 import java.util.List;
