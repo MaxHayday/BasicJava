@@ -1,8 +1,17 @@
 package com.maxhayday.hw.hw03.friday13;
 
+import lombok.SneakyThrows;
+
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.time.DayOfWeek;
 import java.time.LocalDate;
 import java.time.temporal.ChronoUnit;
+import java.util.Comparator;
+import java.util.Map;
+import java.util.regex.Pattern;
+import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 import static java.util.stream.Collectors.counting;
@@ -30,4 +39,20 @@ public class FridayCalculator {
                 .sorted((t, t1) -> (int) (t1.getValue() - t.getValue()))
                 .forEach(System.out::println);
     }
+
+    //My example most repeated word in text
+    @SneakyThrows
+    public static void determineMostRepeatedWordInText(String fileName){
+        BufferedReader bufferedReader = new BufferedReader(new FileReader((fileName)));
+        bufferedReader.lines().flatMap(Pattern.compile("\\W+")::splitAsStream)
+                .filter(s -> s.length() >= 4)
+                .map(String::toLowerCase)
+                .collect(Collectors.groupingBy(w->w, Collectors.summingInt(w->1)))
+                .entrySet()
+                .stream()
+                .sorted(Map.Entry.comparingByValue(Comparator.reverseOrder()))
+                .limit(1)
+                .forEach(e -> System.out.println(e.getKey() + ": " + e.getValue()));
+    }
+
 }

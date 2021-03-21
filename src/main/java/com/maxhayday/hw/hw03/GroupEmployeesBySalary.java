@@ -1,6 +1,7 @@
 package com.maxhayday.hw.hw03;
 
 import com.maxhayday.cw.cw03.Employee;
+import com.maxhayday.hw.hw03.friday13.FridayCalculator;
 import lombok.SneakyThrows;
 
 import java.io.BufferedReader;
@@ -24,7 +25,8 @@ public class GroupEmployeesBySalary {
     }
 
     public static void main(String[] args) {
-        System.out.println(countingWordsFromFile("/home/max/IdeaProjects/BasicJava/TestFile"));
+        //System.out.println(countingWordsFromFile("/home/max/IdeaProjects/BasicJava/TestFile"));
+        FridayCalculator.determineMostRepeatedWordInText("/home/max/IdeaProjects/BasicJava/TestFile");
 
     }
 }
