@@ -4,7 +4,6 @@ import java.util.Random;
 
 public class Knight extends Character {
     private static int power = RandomUtils.getRandomNumberUsingInts(2, 12);
-    private static int hp = new Random().nextInt(13 - 2) + 2;
     private static int damageNumber = RandomUtils.getRandomNumberUsingInts(2, power);
 
     public Knight() {

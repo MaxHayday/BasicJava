@@ -9,7 +9,6 @@ public class Elf extends Character {
     @Override
     public void kick(Character c) {
         if (getPower() > c.getPower()) {
-            //System.out.println("Elf kick " + c.getClass().getSimpleName() + " damage is: " + c.getPower());
             c.setHp(0);
         } else
             c.setPower(c.getPower() - 1);

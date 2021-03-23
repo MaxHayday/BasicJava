@@ -13,7 +13,6 @@ import static java.util.stream.Collectors.toList;
 
 public class CharacterFactory {
     private List<Class<? extends Character>> classes;
-  //  private int random = new Random().nextInt(classes.size() - 1) + 1;
 
     public CharacterFactory() {
         Reflections scanner = new Reflections("com.maxhayday.cw.cw04.heroes");
