@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw03.design_patterns_by_evgeniy;
+package com.maxhayday.cw.cw03.design_patterns_by_evgeniy.command_and_strategy;
 
 import lombok.SneakyThrows;
 

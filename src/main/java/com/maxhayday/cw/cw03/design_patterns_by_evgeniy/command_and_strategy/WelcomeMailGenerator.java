@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw03.design_patterns_by_evgeniy;
+package com.maxhayday.cw.cw03.design_patterns_by_evgeniy.command_and_strategy;
 
 @TemplateCode(1)
 public class WelcomeMailGenerator implements MailGenerator{
