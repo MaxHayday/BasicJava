@@ -11,7 +11,7 @@ import java.util.*;
 
 
 public class ObjectFactory {
-    Reflections scanner = new Reflections("com.maxhayday.cw.cw05.irobot");
+    private Reflections scanner = new Reflections("com.maxhayday.cw.cw05.irobot");
     private static ObjectFactory ourInstance = new ObjectFactory();
     private Config config = new JavaConfig();
     private List<ObjectConfigurator> configurators = new ArrayList<>();

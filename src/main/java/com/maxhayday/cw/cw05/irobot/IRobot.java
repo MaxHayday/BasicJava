@@ -11,7 +11,7 @@ public class IRobot {
     private Cleaner cleaner;
 
     public void init() {
-        //System.out.println(speaker.getClass().getName());
+       // System.out.println(speaker.getClass().getName());
     }
 
     @SneakyThrows

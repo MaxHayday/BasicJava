@@ -7,7 +7,7 @@ public class RandomUtils {
 
     public static int getRandomNumberUsingInts(int min, int max) {
         return random.ints(min, max)
-                .findFirst()
+                .findAny()
                 .getAsInt();
     }
 }

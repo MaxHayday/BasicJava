@@ -8,11 +8,14 @@ public class Main {
         //      ObjectFactory.getInstance().createObject(IRobot.class).cleanRoom();
 //        IRobot iRobot = ObjectFactory.getInstance().createObject(IRobot.class);
 //        iRobot.cleanRoom();
-        WorkerImpl worker = ObjectFactory.getInstance().createObject(WorkerImpl.class);
-        while (true) {
-            worker.work();
-            worker.drinkBeer();
-            Thread.sleep(1000);
-        }
+//        IRobot iRobot = ObjectFactory.getInstance().createObject(IRobot.class);
+//        iRobot.cleanRoom();
+
+
+//        while (true) {
+//            worker.work();
+//            worker.drinkBeer();
+//            Thread.sleep(1000);
+//        }
     }
 }
