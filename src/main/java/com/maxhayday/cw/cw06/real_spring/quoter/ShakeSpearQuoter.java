@@ -1,5 +1,6 @@
 package com.maxhayday.cw.cw06.real_spring.quoter;
 
+import com.maxhayday.cw.cw05.irobot.InjectRandomInt;
 import lombok.Data;
 
 @Data

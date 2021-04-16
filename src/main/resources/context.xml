@@ -3,19 +3,33 @@
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
     <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">
         <property name="age" value="12"/>
     </bean>
     <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.ShakeSpearQuoter">
-        <property name="message" value="Be of not to Be"/>
+        <property name="message" value="Be or not to Be"/>
     </bean>
     <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.TerminatorQuoter">
         <property name="messages">
             <list>
                 <value>I`ll be back</value>
+                <ref bean="string"/>
                 <value>Astalavista baby</value>
             </list>
         </property>
     </bean>
+    <bean id="robot" class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl">
+        <property name="quoters">
+            <list>
+                <ref bean="shakeSpearQuoter"/>
+                <ref bean="terminatorQuoter"/>
+            </list>
+        </property>
+    </bean>
+    <bean id="string" class="java.lang.String">
+        <constructor-arg value="Trust Me"/>
+    </bean>
+
 
 </beans>
