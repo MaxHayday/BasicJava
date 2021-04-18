@@ -17,6 +17,7 @@ public class Soldier {
 
     public static void main(String[] args) {
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        context.close();
 
 
 //        Collection<Quoter> beansOfType = context.getBeansOfType(Quoter.class).values();

@@ -1,14 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
-    <bean class="com.maxhayday.cw.cw06.real_spring.quoter.InjectRandomIntAnnotationBeanPostProcessor"/>
-    <bean class="org.springframework.context.annotation.CommonAnnotationBeanPostProcessor"/>
-    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">
-        <property name="age" value="12"/>
-    </bean>
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
+
+    <import resource="infra.xml"/>
+    <context:property-placeholder location="classpath:application.properties"/>
+
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
+    <!--        <property name="age" value="12"/>-->
+    <!--    </bean>-->
     <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.ShakeSpearQuoter">
-        <property name="message" value="Be or not to Be"/>
+        <property name="message" value="${shake}"/>
     </bean>
     <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.TerminatorQuoter">
         <property name="messages">
@@ -19,6 +22,11 @@
             </list>
         </property>
     </bean>
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
+    <!--        <property name="age" value="12">-->
+
+    <!--        </property>-->
+    <!--    </bean>-->
     <bean id="robot" class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl">
         <property name="quoters">
             <list>
@@ -30,6 +38,4 @@
     <bean id="string" class="java.lang.String">
         <constructor-arg value="Trust Me"/>
     </bean>
-
-
 </beans>

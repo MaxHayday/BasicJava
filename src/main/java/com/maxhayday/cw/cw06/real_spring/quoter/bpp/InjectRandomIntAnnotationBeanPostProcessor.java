@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoter.bpp;
 
 import com.maxhayday.cw.cw05.irobot.InjectRandomIntAnnotationObjectConfigurator;
 import org.springframework.beans.BeansException;
@@ -10,7 +10,7 @@ public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProce
     @Override
     public Object postProcessBeforeInitialization(Object bean, String beanName) throws BeansException {
         injectConfigurator.configure(bean);
-        return BeanPostProcessor.super.postProcessBeforeInitialization(bean, beanName);
+        return bean;
     }
 
     @Override
