@@ -3,7 +3,9 @@ package com.maxhayday.cw.cw06.real_spring.quoter.bpp;
 import com.maxhayday.cw.cw05.irobot.InjectRandomIntAnnotationObjectConfigurator;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
+@Component
 public class InjectRandomIntAnnotationBeanPostProcessor implements BeanPostProcessor {
     private InjectRandomIntAnnotationObjectConfigurator injectConfigurator = new InjectRandomIntAnnotationObjectConfigurator();
 

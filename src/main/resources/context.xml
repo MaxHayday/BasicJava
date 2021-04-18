@@ -4,38 +4,32 @@
        xmlns:context="http://www.springframework.org/schema/context"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd">
 
-    <import resource="infra.xml"/>
-    <context:property-placeholder location="classpath:application.properties"/>
+    <!--    <import resource="infra.xml"/>-->
+
+<!--    <context:component-scan base-package="com.maxhayday.cw.cw06.real_spring"/>-->
+
+<!--    <context:property-placeholder location="classpath:application.properties"/>-->
 
     <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
     <!--        <property name="age" value="12"/>-->
     <!--    </bean>-->
-    <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.ShakeSpearQuoter">
-        <property name="message" value="${shake}"/>
-    </bean>
-    <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.TerminatorQuoter">
-        <property name="messages">
-            <list>
-                <value>I`ll be back</value>
-                <ref bean="string"/>
-                <value>Astalavista baby</value>
-            </list>
-        </property>
-    </bean>
+
+
+    <!--    <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.ShakeSpearQuoter">-->
+    <!--    </bean>-->
+    <!--    <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.TerminatorQuoter">-->
+    <!--    </bean>-->
+    <!--    <bean class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl"/>-->
+
+
     <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
     <!--        <property name="age" value="12">-->
 
     <!--        </property>-->
     <!--    </bean>-->
-    <bean id="robot" class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl">
-        <property name="quoters">
-            <list>
-                <ref bean="shakeSpearQuoter"/>
-                <ref bean="terminatorQuoter"/>
-            </list>
-        </property>
-    </bean>
-    <bean id="string" class="java.lang.String">
-        <constructor-arg value="Trust Me"/>
-    </bean>
+
+
+    <!--    <bean id="string" class="java.lang.String">-->
+    <!--        <constructor-arg value="Trust Me"/>-->
+    <!--    </bean>-->
 </beans>

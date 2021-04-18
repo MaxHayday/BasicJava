@@ -1,8 +1,10 @@
 package com.maxhayday.cw.cw06.real_spring;
 
+import com.maxhayday.cw.cw06.real_spring.quoter.Conf;
 import com.maxhayday.cw.cw06.real_spring.quoter.Quoter;
 import com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl;
 import lombok.Data;
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import java.util.Collection;
@@ -16,7 +18,8 @@ public class Soldier {
     }
 
     public static void main(String[] args) {
-        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+//        ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("context.xml");
+        AnnotationConfigApplicationContext context = new AnnotationConfigApplicationContext(Conf.class);
         context.close();
 
 

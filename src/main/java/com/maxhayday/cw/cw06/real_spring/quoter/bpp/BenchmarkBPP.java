@@ -4,11 +4,12 @@ import com.maxhayday.cw.cw05.irobot.Benchmark;
 import com.maxhayday.cw.cw05.irobot.BenchmarkProxyConfigurator;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanPostProcessor;
+import org.springframework.stereotype.Component;
 
 import java.util.HashMap;
 import java.util.Map;
 
-
+@Component
 public class BenchmarkBPP implements BeanPostProcessor {
     private Map<String, Class> map = new HashMap<>();
     private BenchmarkProxyConfigurator benchmarkProxyConfigurator = new BenchmarkProxyConfigurator();
