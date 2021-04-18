@@ -1,16 +1,19 @@
 package com.maxhayday.cw.cw06.qualifiers_examples;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.beans.factory.annotation.Qualifier;
 
 import javax.annotation.PostConstruct;
 
 
 @org.springframework.stereotype.Service
 public class Service {
+    @Qualifier("oracleDao")
     @Autowired
-    private OracleDao impl1;
+    private Dao impl1;
+    @Qualifier("derbyDao")
     @Autowired
-    private DerbyDao impl2;
+    private Dao impl2;
 
     @PostConstruct
     public void showNameOfDB() {
