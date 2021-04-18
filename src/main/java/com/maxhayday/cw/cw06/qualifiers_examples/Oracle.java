@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.exercise;
+package com.maxhayday.cw.cw06.qualifiers_examples;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,5 +11,5 @@ import java.lang.annotation.RetentionPolicy;
 @Qualifier
 @Component
 @Autowired
-public @interface Derby {
+public @interface Oracle {
 }

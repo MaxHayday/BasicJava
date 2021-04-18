@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.exercise;
+package com.maxhayday.cw.cw06.qualifiers_examples;
 
 @FunctionalInterface
 public interface Dao {
