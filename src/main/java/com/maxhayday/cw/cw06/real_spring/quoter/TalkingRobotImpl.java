@@ -1,9 +1,7 @@
 package com.maxhayday.cw.cw06.real_spring.quoter;
 
 import lombok.Data;
-import org.aspectj.lang.annotation.Aspect;
-import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
+
 import org.springframework.stereotype.Component;
 
 import javax.annotation.PostConstruct;

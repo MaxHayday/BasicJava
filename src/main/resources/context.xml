@@ -10,7 +10,7 @@
 
 <!--    <context:property-placeholder location="classpath:application.properties"/>-->
 
-    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoter.Soldier">-->
     <!--        <property name="age" value="12"/>-->
     <!--    </bean>-->
 
@@ -22,7 +22,7 @@
     <!--    <bean class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl"/>-->
 
 
-    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.Soldier">-->
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoter.Soldier">-->
     <!--        <property name="age" value="12">-->
 
     <!--        </property>-->

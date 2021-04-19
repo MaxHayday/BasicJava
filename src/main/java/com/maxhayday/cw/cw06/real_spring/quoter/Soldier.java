@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.real_spring;
+package com.maxhayday.cw.cw06.real_spring.quoter;
 
 import com.maxhayday.cw.cw06.real_spring.quoter.Conf;
 import com.maxhayday.cw.cw06.real_spring.quoter.Quoter;
