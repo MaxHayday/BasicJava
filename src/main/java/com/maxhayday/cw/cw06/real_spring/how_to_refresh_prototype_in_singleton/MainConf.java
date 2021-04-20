@@ -12,7 +12,7 @@ import java.awt.*;
 public class MainConf {
 
     @Bean
-    @Scope("prototype")
+    @Scope(value = "prototype",proxyMode = ScopedProxyMode.TARGET_CLASS)
     public Color color() {
         return new Color(RandomUtils.getRandomNumberUsingInts(0, 255), RandomUtils.getRandomNumberUsingInts(0, 255), RandomUtils.getRandomNumberUsingInts(0, 255));
     }
