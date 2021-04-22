@@ -1,11 +1,8 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoters.business;
 
 import com.maxhayday.cw.cw05.irobot.InjectRandomInt;
-import lombok.Data;
-import org.springframework.beans.factory.annotation.Qualifier;
+import com.maxhayday.cw.cw06.real_spring.quoters.Book;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.context.annotation.PropertySource;
-import org.springframework.stereotype.Component;
 
 
 @Book

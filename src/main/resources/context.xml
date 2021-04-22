@@ -10,19 +10,19 @@
 
 <!--    <context:property-placeholder location="classpath:application.properties"/>-->
 
-    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoter.Soldier">-->
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoters.Main">-->
     <!--        <property name="age" value="12"/>-->
     <!--    </bean>-->
 
 
-    <!--    <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.ShakeSpearQuoter">-->
+    <!--    <bean id="shakeSpearQuoter" class="com.maxhayday.cw.cw06.real_spring.quoters.business.ShakeSpearQuoter">-->
     <!--    </bean>-->
-    <!--    <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoter.TerminatorQuoter">-->
+    <!--    <bean id="terminatorQuoter" class="com.maxhayday.cw.cw06.real_spring.quoters.business.TerminatorQuoter">-->
     <!--    </bean>-->
-    <!--    <bean class="com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl"/>-->
+    <!--    <bean class="com.maxhayday.cw.cw06.real_spring.quoters.business.TalkingRobotImpl"/>-->
 
 
-    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoter.Soldier">-->
+    <!--    <bean id="soldier" class="com.maxhayday.cw.cw06.real_spring.quoters.Main">-->
     <!--        <property name="age" value="12">-->
 
     <!--        </property>-->

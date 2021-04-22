@@ -1,16 +1,10 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoters;
 
-import com.maxhayday.cw.cw06.real_spring.quoter.Conf;
-import com.maxhayday.cw.cw06.real_spring.quoter.Quoter;
-import com.maxhayday.cw.cw06.real_spring.quoter.TalkingRobotImpl;
 import lombok.Data;
 import org.springframework.context.annotation.AnnotationConfigApplicationContext;
-import org.springframework.context.support.ClassPathXmlApplicationContext;
-
-import java.util.Collection;
 
 @Data
-public class Soldier {
+public class Main {
     private int age;
 
     public void setAge(String age) {

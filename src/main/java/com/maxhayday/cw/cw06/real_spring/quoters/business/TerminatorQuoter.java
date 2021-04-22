@@ -1,9 +1,8 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoters.business;
 
 import com.maxhayday.cw.cw05.irobot.Benchmark;
-import lombok.Data;
+import com.maxhayday.cw.cw06.real_spring.quoters.Film;
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.stereotype.Component;
 
 import javax.annotation.PreDestroy;
 import java.util.List;

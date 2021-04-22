@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.real_spring.quoter.bpp;
+package com.maxhayday.cw.cw06.real_spring.quoters.bpp;
 
 import com.maxhayday.cw.cw05.irobot.InjectRandomIntAnnotationObjectConfigurator;
 import org.springframework.beans.BeansException;

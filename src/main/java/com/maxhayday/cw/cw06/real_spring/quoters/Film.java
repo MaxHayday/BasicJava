@@ -1,4 +1,4 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoters;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
@@ -11,5 +11,5 @@ import java.lang.annotation.RetentionPolicy;
 @Qualifier
 @Component
 @Autowired
-public @interface Book {
+public @interface Film {
 }

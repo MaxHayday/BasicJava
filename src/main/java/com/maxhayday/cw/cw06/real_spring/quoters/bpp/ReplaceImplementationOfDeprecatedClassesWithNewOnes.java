@@ -1,6 +1,6 @@
-package com.maxhayday.cw.cw06.real_spring.quoter.bpp;
+package com.maxhayday.cw.cw06.real_spring.quoters.bpp;
 
-import com.maxhayday.cw.cw06.real_spring.quoter.DeprecatedClass;
+import com.maxhayday.cw.cw06.real_spring.quoters.DeprecatedClass;
 import lombok.SneakyThrows;
 import org.springframework.beans.BeansException;
 import org.springframework.beans.factory.config.BeanDefinition;

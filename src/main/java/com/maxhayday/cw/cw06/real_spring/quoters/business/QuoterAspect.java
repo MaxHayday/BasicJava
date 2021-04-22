@@ -1,8 +1,7 @@
-package com.maxhayday.cw.cw06.real_spring.quoter;
+package com.maxhayday.cw.cw06.real_spring.quoters.business;
 
 //import org.aspectj.lang.annotation.Aspect;
 //import org.aspectj.lang.annotation.Before;
-import org.springframework.context.annotation.EnableAspectJAutoProxy;
 
 //@Aspect
 //@EnableAspectJAutoProxy
